@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung OS Mockup</title>
+    <style>
+        body { margin: 0; background: #000; font-family: 'Segoe UI', sans-serif; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        #phone-frame { width: 360px; height: 740px; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: url('images/G5pqbn4xCAAQNii.jpg') center/cover; }
+        .status-bar { height: 30px; display: flex; justify-content: space-between; padding: 10px 20px; font-size: 14px; background: rgba(0,0,0,0.2); }
+        .app-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 40px 20px; }
+        .app-icon { display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.2s; }
+        .app-icon:active { transform: scale(0.9); }
+        .app-icon img { width: 60px; height: 60px; border-radius: 15px; margin-bottom: 5px; }
+        .app-icon span { font-size: 11px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); }
+    </style>
+</head>
+<body>
+
+    <div id="phone-frame">
+        <div class="status-bar">
+            <span id="time">12:00</span>
+            <span>📶 🔋 89%</span>
+        </div>
+
+        <div class="app-grid" id="home-screen">
+            </div>
+    </div>
+
+    <script type="module" src="data.js"></script>
+</body>
+</html>
